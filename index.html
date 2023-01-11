@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Here is some information about me...</p>
-      </section>
-      <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at...</p>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © 2021 My Name</p>
-    </footer>
-  </body>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>My Portfolio</h1>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Here is some information about me...</p>
+    </section>
+    <section id="projects" class="grid">
+      <h2>My Projects</h2>
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>A brief description of project 1...</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>A brief description of project 2...</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>A brief description of project 3...</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="submit-form.php" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Your message"></textarea>
+        <input type="submit" class="btn" value="Send">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © 2021 My Name</p>
+  </footer>
+</body>
 </html>
